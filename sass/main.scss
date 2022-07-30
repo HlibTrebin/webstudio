@@ -1,3 +1,4 @@
-body {
-  background-color: pink;
-}
+@import "./base/base-main";
+@import "./utils/utils-main";
+@import "./components/components-main";
+@import "./layout/layout-main";

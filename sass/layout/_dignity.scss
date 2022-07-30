@@ -1,0 +1,55 @@
+.dignity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.dignity__list {
+  display: flex;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--primary-text-color);
+}
+.dignity__item {
+  margin-right: 30px;
+
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.dignity__img {
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+.dignity__header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: var(--primary-color-black);
+}
+.dignity__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
