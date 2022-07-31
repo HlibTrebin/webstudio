@@ -1,5 +1,6 @@
 .subscribe__button,
-.hero__button {
+.hero__button,
+.callback__button {
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
@@ -31,6 +32,7 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -39,4 +41,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.callback__button {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
