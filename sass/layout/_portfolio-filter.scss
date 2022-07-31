@@ -1,43 +1,43 @@
-.filter {
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
-  padding-left: 0px;
-  display: flex;
-}
-.filter__list {
-  margin-right: 8px;
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-.filter__button {
-  font-family: inherit;
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
+// .filter {
+//   margin-top: 0px;
+//   margin-right: auto;
+//   margin-bottom: 50px;
+//   margin-left: auto;
+//   padding-left: 0px;
+//   display: flex;
+// }
+// .filter__list {
+//   margin-right: 8px;
+//   &:last-child {
+//     margin-right: 0px;
+//   }
+// }
+// .filter__button {
+//   font-family: inherit;
+//   padding-top: 6px;
+//   padding-right: 22px;
+//   padding-bottom: 6px;
+//   padding-left: 22px;
 
-  text-align: center;
+//   text-align: center;
 
-  font-size: 16px;
-  line-height: 1.63;
-  border-radius: 4px;
-  font-weight: 500;
-  color: var(--primary-color-black);
-  background-color: var(--background-color-white);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 0px;
-  cursor: pointer;
+//   font-size: 16px;
+//   line-height: 1.63;
+//   border-radius: 4px;
+//   font-weight: 500;
+//   color: var(--primary-color-black);
+//   background-color: var(--background-color-white);
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   border: 0px;
+//   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: var(--primary-color-blue);
-    color: var(--primary-color-white);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--primary-color-blue);
+//     color: var(--primary-color-white);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//   }
+// }
