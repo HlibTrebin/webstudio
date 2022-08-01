@@ -1,12 +1,9 @@
-// .footer-social,
+.footer-social,
 .team-social {
   display: flex;
-  padding-bottom: 24px;
   width: 206px;
-  //   justify-content: center;
-  //   padding-right: auto;
-  //   padding-left: auto;
-  //   &__list,
+
+  &__list,
   &__item {
     display: flex;
     align-items: center;
@@ -22,16 +19,7 @@
   }
 }
 
-// .team-social {
-//   padding-right: 32px;
-//   padding-left: 32px;
-
-//   &__link {
-//     background-color: inherit;
-//   }
-// }
-
-// .footer-social__link,
+.footer-social__link,
 .team-social__link {
   display: flex;
   justify-content: center;
@@ -53,6 +41,7 @@
     fill: #ffffff;
   }
 }
-// .footer-social__link {
-//   background-color: rgba(255, 255, 255, 0.1);
-// }
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
