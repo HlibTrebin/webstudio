@@ -30,7 +30,14 @@ referrerpolicy="no-referrer"
         <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo-header">Studio</span></a
         >
-        <nav>
+        <button class="menu-btn is-open" type="button" aria-label="Переключатель мобильного меню" aria-expanded="true" data-menu-button>
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+         <div class="menu-container" data-menu>
+          <nav >
           <ul class="nav">
             <li class="nav__list">
               <a class="nav__link--active nav__link" href="./index.html">Студия</a>
@@ -40,8 +47,8 @@ referrerpolicy="no-referrer"
             </li>
             <li class="nav__list"><a class="nav__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="contact">
+          </nav>
+          <ul class="contact">
           <li class="contact__list">
             <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16" height="12">
@@ -58,7 +65,8 @@ referrerpolicy="no-referrer"
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+          </ul>
+        </div> 
       </div>
     </header>
     <!-- main -->
@@ -548,6 +556,7 @@ referrerpolicy="no-referrer"
         </div>
       
     </div>
+    <script src="./js/mobileMenu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

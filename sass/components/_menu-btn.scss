@@ -1,0 +1,26 @@
+.menu-btn {
+  margin-left: auto;
+
+  padding: 0;
+
+  background-color: var(--primary-color-white);
+
+  border: none;
+
+  & > svg {
+    fill: #212121;
+    &:hover,
+    &:focus {
+      fill: #2196f3;
+    }
+  }
+}
+.menu-btn .icon-cross {
+  display: none;
+}
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
