@@ -1,6 +1,11 @@
 // .work {
-//   padding-bottom: 94px;
+//   //   padding-bottom: 94px;
 // }
+@media screen and (max-width: 480px) {
+  .work {
+    display: none;
+  }
+}
 // .work > .container {
 //   display: flex;
 //   flex-direction: column;
