@@ -402,6 +402,7 @@ address {
   left: 0;
   width: 100%;
   padding: 48px 40px 48px 40px;
+  z-index: 999;
   background-color: var(--primary-color-white);
 }
 .menu-container.is-closed {

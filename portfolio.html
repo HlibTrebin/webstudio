@@ -4,28 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>WebStudio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
-    <link rel="stylesheet" href="./css/main.min.css">
-    <title>WebStudio</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
     <!-- шапка -->
@@ -34,35 +30,67 @@
         <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo-header">Studio</span></a
         >
-        <nav>
-          <ul class="nav">
-            <li class="nav__list">
-              <a class="nav__link" href="./index.html">Студия</a>
+        <button
+          class="menu-btn is-open"
+          type="button"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="true"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <nav>
+            <ul class="nav">
+              <li class="nav__list">
+                <a class="nav__link--active nav__link" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact">
+            <li class="contact__list">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="../images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__list">
-              <a class="nav__link--active nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="contact__list">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="../images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="nav__list"><a class="nav__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__list">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="../webstudio/images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li class="contact__list">
-          <li>
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="../webstudio/images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- main -->
@@ -91,7 +119,7 @@
           <!-- проекты -->
           <ul class="projects">
             <li class="projects__list">
-              <a  class="projects__link" href="">
+              <a class="projects__link" href="">
                 <div class="overlay-box">
                   <img src="./images/project1.jpg" alt="веб-сайт" width="370" />
                   <p class="overlay-text">текст описание</p>
@@ -127,7 +155,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header">Ресторан <span lang="en"> Seafood </span></h2>
+                  <h2 class="projects__header">
+                    Ресторан <span lang="en"> Seafood </span>
+                  </h2>
                   <p>Приложение</p>
                 </div>
               </a>
@@ -139,7 +169,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header">Проект <span lang="en"> Prime </span></h2>
+                  <h2 class="projects__header">
+                    Проект <span lang="en"> Prime </span>
+                  </h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
@@ -155,7 +187,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header">Проект <span lang="en"> Boxes</span></h2>
+                  <h2 class="projects__header">
+                    Проект <span lang="en"> Boxes</span>
+                  </h2>
                   <p>Приложение</p>
                 </div>
               </a>
@@ -167,7 +201,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header" lang="en" >Inspiration has no Borders</h2>
+                  <h2 class="projects__header" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p>Веб-сайт</p>
                 </div>
               </a>
@@ -179,7 +215,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header">Издание <span lang="en"> Limited Edition</span></h2>
+                  <h2 class="projects__header">
+                    Издание <span lang="en"> Limited Edition</span>
+                  </h2>
                   <p>Дизайн</p>
                 </div>
               </a>
@@ -191,7 +229,9 @@
                   <p class="overlay-text">текст описание</p>
                 </div>
                 <div class="projects__text-container">
-                  <h2 class="projects__header">Проект <span lang="en"> LAB</span></h2>
+                  <h2 class="projects__header">
+                    Проект <span lang="en"> LAB</span>
+                  </h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
@@ -247,7 +287,7 @@
               </ul>
             </address>
           </div>
-          <div>
+          <div class="footer-container__social">
             <h2>присоединяйтесь</h2>
             <ul class="footer-social">
               <li class="footer-social__list">

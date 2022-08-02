@@ -19,6 +19,7 @@
 
   padding: 48px 40px 48px 40px;
 
+  z-index: 999;
   background-color: var(--primary-color-white);
   &.is-closed {
     display: none;
