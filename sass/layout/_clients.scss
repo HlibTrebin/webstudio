@@ -16,12 +16,21 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: -30px;
+
+  @media screen and (min-width: 480px) {
+    justify-content: normal;
+    margin: -5px;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    margin-top: -30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    gap: 30px;
+  }
 }
 .clients-list__company {
-  margin-top: 30px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -29,6 +38,18 @@
   &:hover,
   &:focus {
     border: 1px solid var(--primary-color-blue);
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    width: calc((100% - 4 * 5px) / 2);
+  }
+  @media screen and (min-width: 480px) {
+    margin: 5px;
+  }
+  @media screen and(min-width:768px) {
+    width: 226px;
+    height: 92px;
+    margin: 0px;
   }
 }
 .clients-list__link {
