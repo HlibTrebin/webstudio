@@ -56,7 +56,7 @@
                 <a class="nav__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="">Контакты</a>
+                <a class="nav__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -544,6 +544,7 @@
               type="email"
               name="email"
               placeholder="E-mail"
+              required
             />
           </label>
           <button class="subscribe__button" type="submit">
@@ -565,7 +566,7 @@
           <div class="label-container">
             <label>
               Имя
-              <input type="text" name="user-name" autofocus />
+              <input type="text" name="user-name" required autofocus />
               <svg width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
@@ -575,7 +576,7 @@
           <div class="label-container">
             <label>
               Телефон
-              <input type="tel" name="user-phone-number" />
+              <input type="tel" name="user-phone-number" required />
               <svg width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
@@ -585,7 +586,7 @@
           <div class="label-container">
             <label>
               Почта
-              <input type="email" name="user-email" />
+              <input type="email" name="user-email" required />
               <svg width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
@@ -604,7 +605,7 @@
 
           <div class="callback__condition">
             <label>
-              <input type="checkbox" name="hobby" value="music" />
+              <input type="checkbox" name="hobby" value="music" required />
               <span>Соглашаюсь с рассылкой и принимаю</span>
               <a href="" target="_blank"> Условия договора</a>
             </label>
