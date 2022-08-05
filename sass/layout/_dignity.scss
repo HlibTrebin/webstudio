@@ -10,6 +10,10 @@
 
     width: 738px;
   }
+  @media screen and (min-width: 1600px) {
+    flex-wrap: nowrap;
+    width: 1170px;
+  }
 }
 .dignity__header {
   margin-bottom: 10px;
@@ -32,6 +36,10 @@
   }
   @media screen and (min-width: 768px) {
     width: 354px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 270px;
   }
 
   &:last-child {

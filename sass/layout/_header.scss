@@ -56,6 +56,9 @@
     @media screen and (min-width: 768px) {
       flex-direction: column;
     }
+    @media screen and (min-width: 1600px) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -151,7 +154,11 @@
   }
   content: "";
 }
-
+.menu--active {
+  @media screen and (max-width: 767px) {
+    color: var(--primary-color-blue);
+  }
+}
 .contact {
   &__list {
     font-weight: 500;
@@ -168,6 +175,9 @@
       font-size: 12px;
       line-height: 1.17;
     }
+    @media screen and (min-width: 1600px) {
+      margin-bottom: 0px;
+    }
 
     &:first-child {
       font-size: 24px;
@@ -183,6 +193,9 @@
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
         font-size: 12px;
+      }
+      @media screen and (min-width: 1600px) {
+        margin-left: 30px;
       }
     }
   }

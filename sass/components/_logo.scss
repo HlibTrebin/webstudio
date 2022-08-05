@@ -9,6 +9,12 @@
 
   color: var(--primary-color-blue);
 
+  @media screen and (min-width: 1600px) {
+    width: 145px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
   &-header {
     color: var(--label-color-black);
   }

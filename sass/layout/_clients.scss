@@ -12,6 +12,9 @@
   line-height: 1.17;
 
   color: var(--primary-color-black);
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+  }
 }
 .clients-list {
   display: flex;
@@ -50,6 +53,10 @@
     width: 226px;
     height: 92px;
     margin: 0px;
+  }
+
+  @media screen and(min-width:1600px) {
+    width: 170px;
   }
 }
 .clients-list__link {
