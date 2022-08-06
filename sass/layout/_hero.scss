@@ -72,6 +72,14 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/hero-bg-480-x2.jpg");
+    @media screen and (max-width: 100vw) {
+      background-image: url(/images/hero-bg-1600-x2.jpg);
+    }
+    @media screen and (max-width: 768px) {
+      background-image: url(/images/hero-bg-768-x2.jpg);
+    }
+    @media screen and (max-width: 480px) {
+      background-image: url(/images/hero-bg-480-x2.jpg);
+    }
   }
 }
