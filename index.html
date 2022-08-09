@@ -160,27 +160,78 @@
           <h2 class="work__header">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <img
-                srcset="./images/note.jpg 1x, ./images/note-x2.jpg 2x"
-                src="./images/note.jpg"
-                alt="ноутбук"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about_1.webp    1x,
+                    ./images/about/about_1-x2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/about_1.jpg    1x,
+                    ./images/about/about_1-x2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about/about_1.jpg"
+                  alt="Ноут"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work-list__item">
-              <img
-                srcset="./images/phone.jpg 1x, ./images/phone-x2.jpg 2x"
-                src="./images/phone.jpg"
-                alt="телефон"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about_2.webp    1x,
+                    ./images/about/about_2-x2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/about_2.jpg    1x,
+                    ./images/about/about_2-x2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about/about_2.jpg"
+                  alt="Телефон"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work-list__item">
-              <img
-                srcset="./images/tablet.jpg 1x, ./images/tablet-x2.jpg 2x"
-                src="./images/tablet.jpg"
-                alt="планшет"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about_3.webp    1x,
+                    ./images/about/about_3-x2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/about_3.jpg    1x,
+                    ./images/about/about_3-x2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about/about_3.jpg"
+                  alt="Планшет"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__text">Дизайнерские решения</p>
             </li>
           </ul>
